@@ -1,0 +1,31 @@
+.card1 {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    margin-top: 10px;
+    background-color: darkgrey !important;
+}
+
+.card {
+    max-height: 100px !important;
+    margin-top: 10px !important;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.568);
+}
+
+.p1 {
+    color: rgba(255, 255, 255, 0.568);
+    margin-top: 10px;
+}
+
+.p2 {
+    color: rgba(0, 0, 0, 0.568);
+    margin-top: 10px;
+}
+
+.title1 {
+    color:  rgba(255, 255, 255, 0.568);
+    margin-top: 10px;
+}
