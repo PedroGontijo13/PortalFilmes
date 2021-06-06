@@ -8,7 +8,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
       <link rel="stylesheet" href="style.css">
-      <link rel="icon" type="imagem/png" href="imgs/film5-removebg-preview.png" />
+      <link rel="icon" type="imagem/png" href="imgs/film5.png" />
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
       <title>HyFilms</title>
   </head>
@@ -19,7 +19,7 @@
             <div class="col-12">
               <nav class="navbar navbar-expand-lg navbar-dark bg-inverse">
                 <div class="container-fluid">
-                  <img src="imgs/film5-removebg-preview.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                  <img src="imgs/film5.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
                   <a class="navbar-brand" href="#">HyFilms</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="sobre/index.html">Sobre</a>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,7 +48,8 @@
                       </li>
                     </ul>
                     <form class="d-flex search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <label for="search"></label>
+                        <input class="form-control me-2" type="text" id="search" name="search" placeholder="Search" aria-label="Search">
                       <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                   </div>
@@ -112,7 +113,7 @@
                     <div class="carousel-item">
                       <div class="row">
                         <div class="col-12 col-sm-12 col-md-8 col-lg-6 imagem-banner">
-                          <img src="imgs/240px-the_avengers_cartaz.jpg" class="rounded mx-auto d-block" alt="...">
+                          <img src="imgs/Annabelle-poster.jpg" class="rounded mx-auto d-block" alt="...">
                         </div>
                         <div class="col-12 col-sm-12 col-md-4 col-lg-6">
                           <h1 class="text-banner">Os Vingadores</h1>
@@ -161,36 +162,79 @@
         <section class="details-card">
           <div class="container">
             <div class="row">
-              <div class="col-md-4">
-                <div class="card card-avengers">
-                  <img src="imgs/240px-ForrestGumpPoster.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Forrest Gump - O Contador de Histórias</h5>
-                    <p class="card-text">Mesmo com o raciocínio lento, Forrest Gump nunca se sentiu desfavorecido. Graças ao apoio da mãe, ele teve uma vida normal. Seja no campo de futebol como um astro do esporte, lutando no Vietnã ou como capitão de um barco de pesca de camarão, Forrest inspira a todos com seu otimismo. Mas a pessoa que Forrest mais ama pode ser a mais difícil de salvar: seu amor de infância, a doce e perturbada Jenny.</p>
-                    <a href="#" class="btn btn-secondary">Ver</a>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="imgs/250px-Avengers_Endgame.jpg" alt="Avengers_capa">
+                    <div class="card-body">
+                      <div id="tela">
+                      </div>
+                    </div>
                   </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="imgs/spiderMan.jpg" alt="SpiderMan_capa">
+                    <div class="card-body">
+                        <div id="tela1">
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card card-avengers">
-                  <img src="imgs/240px-the_avengers_cartaz.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Os Vingadores</h5>
-                    <p class="card-text">Loki, o irmão de Thor, ganha acesso ao poder ilimitado do cubo cósmico ao roubá-lo de dentro das instalações da S.H.I.E.L.D. Nick Fury, o diretor desta agência internacional que mantém a paz, logo reúne os únicos super-heróis que serão capazes de defender a Terra de ameaças sem precedentes.Avengers formam o time dos sonhos de Fury, mas eles precisam aprender a colocar os egos de lado e agir como um grupo em prol da humanidade.</p>
-                    <a href="#" class="btn btn-secondary">Ver</a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="imgs/Annabelle-poster.jpg" alt="Annabelle_capa">
+                    <div class="card-body">
+                        <div id="tela2">
+                        </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card card-avengers">
-                  <img src="imgs/250px-Avengers_Endgame.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Vingadores: Ultimato</h5>
-                    <p class="card-text">Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.</p>
-                    <a href="#" class="btn btn-secondary">Ver</a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="imgs/poderoso-chefao.jpg" alt="poderoso-chefao_capa">
+                    <div class="card-body">
+                      <div id="tela3">
+                      </div>
+                    </div>
                   </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="imgs/007.jpg" alt="007_capa">
+                    <div class="card-body">
+                      <div id="tela4">
+                      </div>
+                    </div>
                 </div>
-              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="imgs/nopaimnogain.jpg" alt="nopainnogain_capa">
+                    <div class="card-body">
+                        <div id="tela5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="imgs/RUSH_poster01_thumb[1].jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <div id="tela6">
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="imgs/coringa.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <div id="tela7">
+                        </div>
+                    </div>
+                  </div>
             </div>
             <div class="row">
               <div class="col-12 roller">
@@ -332,8 +376,8 @@
           </div>
         </div>
       </footer>
-
+      <script src="script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-  </body>
+    </body>
 </html>

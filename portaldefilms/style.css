@@ -21,8 +21,9 @@ header {
     margin-top: 100% !important;
 }
 
-.card-avengers {
-    height: 900px;
+.card {
+    height: 99%;
+    align-items: center;
 }
 
 .footer-text {
