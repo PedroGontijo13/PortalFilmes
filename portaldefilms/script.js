@@ -17,8 +17,6 @@ function sAvengers () {
     document.getElementById('tela').innerHTML = texto;
 } 
 
-let nome  = "PEDRO"
-
 function Avengers () {
     var xhr = new XMLHttpRequest();
     xhr.onload = sAvengers;
@@ -164,7 +162,7 @@ function sRush () {
             <p class="text-banner">${obj.overview}</p>
             <a href="${obj.homepage}" class="btn btn-primary">Ver mais</a>
         </div
-              </div> 
+              </div>
         </div>
     </div>`)
     document.getElementById('tela6').innerHTML = texto;
