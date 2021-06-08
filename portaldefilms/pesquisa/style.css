@@ -1,0 +1,175 @@
+.header {
+    justify-content: end !important;
+}
+
+header {
+    font-family: 'Bowlby One SC', cursive;
+}
+
+
+.card-size {
+    text-align: center !important;
+    align-items: center;
+}
+
+.footer-area {
+    background-color: rgb(119, 111, 111) !important;
+    color: #000000;
+}
+
+.icons {
+    margin-top: 100% !important;
+}
+
+.card {
+    height: 99%;
+    align-items: center;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.footer-area p {
+    margin-top: 20px !important;
+}
+
+.materia {
+    display: flex !important;
+    margin-top: 20px !important;
+}
+
+.materia b {
+    margin-top: 20px !important;
+    text-align: initial !important;
+    margin-bottom: 2%;
+    font-size: medium !important;
+    color: rgb(139, 135, 135) !important;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.materia p {
+    margin: 1% !important;
+}
+
+.card {
+    margin-top: 20px;
+    background-color: rgb(119, 111, 111) !important;
+}
+
+h1 {
+    font-size: larger !important;
+}
+
+.entrevistas .videos{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form {
+    height: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    margin: 10px !important;
+}
+
+form button {
+    background-color: #616866;
+}
+
+.header a {
+    color: rgb(139, 135, 135) !important;
+}
+
+.cards {
+    align-items: center !important;
+}
+
+body {
+    background-color: rgb(75, 70, 70) !important;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2%;
+    color: rgb(139, 135, 135) !important;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.entrevistas {
+    background-color: rgb(119, 111, 111) !important;
+    margin-top: 20px;
+}
+
+.banner {
+    background-color: rgb(119, 111, 111) !important;
+}
+
+.banner img {
+    max-width: 500px !important;
+}
+
+button {
+    margin: 2% !important;
+}
+
+footer {
+    margin-top: 5%;
+    color: rgb(139, 135, 135) !important;
+    text-align: center !important;
+}
+
+.title2 {
+    margin-top: 20px !important;
+    text-align: initial !important;
+    margin-bottom: 2%;
+    color: rgb(139, 135, 135) !important;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.roller {
+    margin-top: 20px !important;
+    text-align: end !important;
+    margin-bottom: 2%;
+    color: rgb(139, 135, 135) !important;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.banner img {
+    align-items: center !important;
+    width: 250px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.banner h2 {
+    margin: 10px !important;
+    width: 5%;
+}
+
+.container4 {
+    height: 10em;
+    position: relative; 
+}
+
+.container4 p {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    justify-content: center !important; 
+}
+
+.imagem-banner img{
+    width: 100%!important;
+    height: 100% !important;
+}
+
+.text-banner p{
+    width: 100%!important;
+    height: 100% !important;
+}
