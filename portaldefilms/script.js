@@ -198,6 +198,10 @@ function Coringa () {
     xhr.send();
 }
 
+function MostraA () {
+    alert("CLIQUEI")
+}
+
 window.onload = () => {
     Avengers();
     spiderMan ();
@@ -206,5 +210,5 @@ window.onload = () => {
     zeroZerosete ();
     noPain ();
     Rush ();
-    Coringa ();
+    document.getElementById('btnmore').addEventListener ('click', Coringa);
 }
