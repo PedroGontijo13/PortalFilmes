@@ -6,18 +6,18 @@ function exibeNoticias () {
 
     for(i = 0; i < tamanho; i++) {
           text = text + `
-      <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-          <div class="card">
-        <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.results[i].backdrop_path} alt="Imagem de capa do card">
-                <div class="card-body">
+          <div class="row">
+            <div class="col-12">
+                <div class="card">
+                  <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.results[i].backdrop_path} alt="Imagem de capa do card">
                     <div class="card-body">
-              <h5 class="card-title">${obj.results[i].title}</h5>
-              <p class="text-banner">${obj.results[i].overview}</p>
-              <a href="${obj.results[i].homepage}" class="btn btn-primary">Ver mais</a>
-          </div
+                      <h5 class="card-title">${obj.results[i].title}</h5>
+                      <p class="text-banner">${obj.results[i].overview}</p>
+                      <a href="${obj.results[i].homepage}" class="btn btn-primary">Ver mais</a>
+                    </div>
                 </div>
-          </div>
-      </div>	`
+            </div>
+          </div>`
       
     }
     console.log(obj.results[0])
