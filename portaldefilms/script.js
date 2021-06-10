@@ -198,10 +198,6 @@ function Coringa () {
     xhr.send();
 }
 
-function MostraA () {
-    alert("CLIQUEI")
-}
-
 window.onload = () => {
     Avengers();
     spiderMan ();
