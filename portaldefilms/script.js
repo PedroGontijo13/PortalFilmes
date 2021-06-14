@@ -2,7 +2,7 @@ function sAvengers () {
     let obj = (JSON.parse(this.responseText));
     let texto = (`
     
-    <div class="col-12 banner1">
+    <div class="col-12">
         <div class="card">
         <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.backdrop_path} alt="Imagem de capa do card">
                <div class="card-body">
@@ -28,7 +28,7 @@ function sspiderMan () {
     let obj = (JSON.parse(this.responseText));
     let texto = (`
     
-    <div class="col-12 banner1">
+    <div class="col-12">
         <div class="card">
         <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.backdrop_path} alt="Imagem de capa do card">
                <div class="card-body">
@@ -53,7 +53,7 @@ function spiderMan () {
 function sAnnabelle () {
     let obj = (JSON.parse(this.responseText));
     let texto = (`
-    <div class="col-12 banner1">
+    <div class="col-12">
         <div class="card">
         <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.backdrop_path} alt="Imagem de capa do card">
                <div class="card-body">
@@ -78,7 +78,7 @@ function Annabelle () {
 function sPoderosoChefao () {
     let obj = (JSON.parse(this.responseText));
     let texto = (`
-    <div class="col-12 banner1">
+    <div class="col-12">
         <div class="card">
         <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.backdrop_path} alt="Imagem de capa do card">
                <div class="card-body">
@@ -103,7 +103,7 @@ function PoderosoChefao () {
 function szeroZerosete () {
     let obj = (JSON.parse(this.responseText));
     let texto = (`
-    <div class="col-12 banner1">
+    <div class="col-12">
         <div class="card">
         <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.backdrop_path} alt="Imagem de capa do card">
                <div class="card-body">
@@ -128,7 +128,7 @@ function zeroZerosete () {
 function snoPain () {
     let obj = (JSON.parse(this.responseText));
     let texto = (`
-    <div class="col-12 banner1">
+    <div class="col-12">
         <div class="card">
         <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.backdrop_path} alt="Imagem de capa do card">
                <div class="card-body">
@@ -153,7 +153,7 @@ function noPain () {
 function sRush () {
     let obj = (JSON.parse(this.responseText));
     let texto = (`
-    <div class="col-12 banner1">
+    <div class="col-12">
         <div class="card">
         <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.backdrop_path} alt="Imagem de capa do card">
                <div class="card-body">
@@ -178,7 +178,7 @@ function Rush () {
 function sCoringa () {
     let obj = (JSON.parse(this.responseText));
     let text = (`
-    <div class="col-12 banner1">
+    <div class="col-12">
         <div class="card">
         <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.backdrop_path} alt="Imagem de capa do card">
                <div class="card-body">
