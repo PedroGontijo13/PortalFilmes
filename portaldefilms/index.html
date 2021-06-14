@@ -35,8 +35,8 @@
                     </ul>
                     <form class="d-flex search">
                       <label for="search"></label>
-                        <input class="form-control me-2" type="text" id="search" name="search" placeholder="Search" aria-label="Search">
-                      <button type="submit"><i class="fa fa-search"></i></button>
+                        <input type="text" id="name" name="text">
+                      <button id="btnPesquisa"><i class="fa fa-search"></i></button>
                     </form>
                   </div>
                 </div>
@@ -46,6 +46,12 @@
         </div>
       </header>
       <main>
+        <div class="container">
+          <div class="row">
+            <div id="tela20">
+            </div>
+          </div>
+        </div>
         <div class="container title">
           <div class="row">
             <div class="col-12">
@@ -131,18 +137,6 @@
             <div class="col-6 title2">
               <h1>Em destaque: </h1>
             </div>
-            <div class="col-6 roller">
-              <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                  Categoria
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Ação</a></li>
-                  <li><a class="dropdown-item" href="#">Aventura</a></li>
-                  <li><a class="dropdown-item" href="#">Comedia</a></li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
         <section class="details-card">
@@ -167,7 +161,7 @@
                 <div id="tela7">
                 </div>
                 <div class="row">
-                  <div class="col-12 roller">
+                  <div class="col-6 roller">
                     <a class="btn btn-secondary" id="btnmore">
                       +Films
                     </a>
@@ -214,12 +208,6 @@
                     </div>
                   </div>
               </div>
-              <div class="row">
-                <div class="col-12 roller">
-                  <a class="btn btn-secondary" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                    +Avaliacoes
-                  </a>
-                </div>
             </div>
           </div>
         </section>

@@ -2,7 +2,7 @@ function sAvengers () {
     let obj = (JSON.parse(this.responseText));
     let texto = (`
     
-    <div class="col-12">
+    <div class="col-12 banner1">
         <div class="card">
         <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.backdrop_path} alt="Imagem de capa do card">
                <div class="card-body">
@@ -28,7 +28,7 @@ function sspiderMan () {
     let obj = (JSON.parse(this.responseText));
     let texto = (`
     
-    <div class="col-12">
+    <div class="col-12 banner1">
         <div class="card">
         <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.backdrop_path} alt="Imagem de capa do card">
                <div class="card-body">
@@ -53,7 +53,7 @@ function spiderMan () {
 function sAnnabelle () {
     let obj = (JSON.parse(this.responseText));
     let texto = (`
-    <div class="col-12">
+    <div class="col-12 banner1">
         <div class="card">
         <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.backdrop_path} alt="Imagem de capa do card">
                <div class="card-body">
@@ -78,7 +78,7 @@ function Annabelle () {
 function sPoderosoChefao () {
     let obj = (JSON.parse(this.responseText));
     let texto = (`
-    <div class="col-12">
+    <div class="col-12 banner1">
         <div class="card">
         <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.backdrop_path} alt="Imagem de capa do card">
                <div class="card-body">
@@ -103,7 +103,7 @@ function PoderosoChefao () {
 function szeroZerosete () {
     let obj = (JSON.parse(this.responseText));
     let texto = (`
-    <div class="col-12">
+    <div class="col-12 banner1">
         <div class="card">
         <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.backdrop_path} alt="Imagem de capa do card">
                <div class="card-body">
@@ -128,7 +128,7 @@ function zeroZerosete () {
 function snoPain () {
     let obj = (JSON.parse(this.responseText));
     let texto = (`
-    <div class="col-12">
+    <div class="col-12 banner1">
         <div class="card">
         <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.backdrop_path} alt="Imagem de capa do card">
                <div class="card-body">
@@ -153,7 +153,7 @@ function noPain () {
 function sRush () {
     let obj = (JSON.parse(this.responseText));
     let texto = (`
-    <div class="col-12">
+    <div class="col-12 banner1">
         <div class="card">
         <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.backdrop_path} alt="Imagem de capa do card">
                <div class="card-body">
@@ -178,7 +178,7 @@ function Rush () {
 function sCoringa () {
     let obj = (JSON.parse(this.responseText));
     let text = (`
-    <div class="col-12">
+    <div class="col-12 banner1">
         <div class="card">
         <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.backdrop_path} alt="Imagem de capa do card">
                <div class="card-body">
@@ -198,6 +198,50 @@ function Coringa () {
     xhr.send();
 }
 
+function exibeNoticias () {
+    let text = '';
+    let obj = (JSON.parse(this.responseText));
+    let tamanho = obj.results.length;
+    let divTela = document.getElementById('tela20');
+
+    for(i = 0; i < tamanho; i++) {
+        if(i > 4) {
+            break;
+        }
+        else {
+            text = text + `
+            <div class="row cards-procura">
+                <div class="col-12">
+                    <div class="card">
+                        <img class="card-img-top" src=https://image.tmdb.org/t/p/w500/${obj.results[i].backdrop_path} alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title">${obj.results[i].title}</h5>
+                            <p class="text-banner">${obj.results[i].overview}</p>
+                            <a href="${obj.results[i].homepage}" class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+        }
+    }
+    console.log(obj.results[0])
+    
+    divTela.innerHTML = text;
+}
+
+function mostraLista () {
+    var input = document.querySelector("#name");
+    var query = input.value;
+
+    console.log(query)
+
+    var xhr = new XMLHttpRequest ();
+    xhr.onload = exibeNoticias;
+    xhr.open ('GET',`
+    https://api.themoviedb.org/3/search/movie?api_key=0f3fb72a7a6f467451fc6b155705be3d&query=${query}`);
+    xhr.send();
+}
+
 window.onload = () => {
     Avengers();
     spiderMan ();
@@ -207,4 +251,5 @@ window.onload = () => {
     noPain ();
     Rush ();
     document.getElementById('btnmore').addEventListener ('click', Coringa);
+    document.getElementById('btnPesquisa').addEventListener ('click', mostraLista);
 }
